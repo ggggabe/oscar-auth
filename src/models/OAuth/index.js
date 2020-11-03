@@ -4,11 +4,10 @@
  */
 
 const OAuthClient = require('./OAuthClient')
-const Authentication = require('./Authentication')
 const Request = require('./Request')
 const Response = require('./Response')
 const { AuthDb } = require('../database/auth')
-const { AccessToken, AuthorizationGrant } = require('./Tokens')
+const { Authentication, AccessToken, AuthorizationGrant } = require('./Authentication')
 
 class OAuth {
   async static registerClient (client) {
